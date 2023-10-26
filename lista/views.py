@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Item
 
 
-def lista(request):
+""" def lista(request):
     itens = Item.objects.all()
     context = {'itens':itens}
-    return render(request, "index.html", context)
+    return r """ender(request, "index.html", context)
