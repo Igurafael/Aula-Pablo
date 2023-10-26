@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista</title>
    
 </head>
 <body>
-    <div style="text-align: center;">
-        <h1>xesquedele </h1> <br><br>
-        <h1>Boló de massâ </h1>
-    </div>
+      <h1>Lista de Itens</h1>
+      <ul>
+        {% for item in itens %}
+        <li>{{item.item}} | {{item.quantidade}}</li>
+        {% endfor %}
+      </ul>
     
 </body>
 </html>
