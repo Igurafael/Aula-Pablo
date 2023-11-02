@@ -8,6 +8,12 @@
 </head>
 <body>
       <h1>Lista de Itens</h1>
+
+      <form action="add_item">
+        <input type="submit" value="Add Item">
+      </form>
+        
+      
       <ul>
         {% for item in itens %}
         <li>{{item.item}} | {{item.quantidade}}</li>
